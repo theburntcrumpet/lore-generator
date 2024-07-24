@@ -48,10 +48,10 @@ function App() {
 
   useEffect(() => {
     const config: IDictionaryConfiguration = {
-      adjectivesPath: "/data/adjectives.txt",
-      nounsPath: "/data/nouns.txt",
-      maleNamesPath: "/data/names/male.txt",
-      femaleNamesPath: "/data/names/female.txt",
+      adjectivesPath: "./data/adjectives.txt",
+      nounsPath: "./data/nouns.txt",
+      maleNamesPath: "./data/names/male.txt",
+      femaleNamesPath: "./data/names/female.txt",
     };
     async function initializeDict() {
       const dict = await GetDictionary(config);
